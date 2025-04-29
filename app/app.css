@@ -1,3 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+    --font-figtree: "Figtree", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --font-jakarta: "Jakarta", sans-serif;
 
+    --color-dark-400: #1F1F36;
+
+    --background-image-hero: url("./assets/images/hero-img.png");
+
+}
+
+@layer utilities {
+    .wrapper {
+        @apply w-full max-w-7xl mx-auto px-4 lg:px-8;
+    }
+}
