@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-figtree: "Figtree", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-jakarta: "Jakarta", sans-serif;
+
+  --color-dark-400: #1f1f36;
+  --color-dark-300: #2e2c48;
+
+  --color-gray-100: #7f7e83;
+
+  --color-red-200: #ff543d;
+  --color-red-400: #c01048;
+  --color-red-300: #b93815;
+
+  --color-green-100: #027a48;
+
+  --color-blue-100: #363f72;
+  --color-blue-200: #026aa2;
+  --color-blue-300: #256ff1;
+
+  --color-purple-100: #6941c6;
+
+  --background-image-hero: url("./assets/images/hero-img.png");
+}
+
+@layer base {
+  h1 {
+    @apply text-7xl font-bold font-figtree leading-24;
+  }
+  h2 {
+    @apply text-[36px] font-bold font-figtree leading-11;
+  }
+  h3 {
+    @apply text-lg font-semibold leading-5;
+  }
+}
+@layer components {
+  .subtitle {
+    @apply text-lg font-normal font-figtree text-dark-300;
+  }
+}
+
+@layer utilities {
+  .wrapper {
+    @apply w-full max-w-7xl mx-auto px-4 lg:px-8;
+  }
+}
