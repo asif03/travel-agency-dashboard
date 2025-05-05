@@ -23,9 +23,17 @@
   --color-purple-100: #6941c6;
 
   --background-image-hero: url("./assets/images/hero-img.png");
+  --background-image-auth: url("./assets/images/auth-img.webp");
 }
 
 @layer base {
+  html,
+  body {
+    font-family: "Figtree", sans-serif;
+    background-color: #f9fbfc;
+    scroll-behavior: smooth;
+  }
+
   h1 {
     @apply text-7xl font-bold font-figtree leading-24;
   }
@@ -45,5 +53,9 @@
 @layer utilities {
   .wrapper {
     @apply w-full max-w-7xl mx-auto px-4 lg:px-8;
+  }
+
+  .auth {
+    @apply w-full h-screen bg-auth bg-cover bg-no-repeat bg-center;
   }
 }
